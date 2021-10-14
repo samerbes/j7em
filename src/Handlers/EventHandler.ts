@@ -17,8 +17,8 @@ export default class EventHandler {
         if (!data.events) return void null
         const add = event.action === 'add'
         const text = add
-            ? `-Jigoku e yokoso Onii-chan💖‣ ${event.participants
-                  .map((jid) => `@${jid.split('@')[0]}`)
+            ? `Jigoku e yokoso Onii-chan 💕💞 ${event.participants
+                  .map((jid) => `@${jid.split('@')[0]} \n ترانا نحبك`)
                   .join(', ')}*`
             : event.action === 'remove'
             ? `*@${event.participants[0].split('@')[0]}* بنشتاق لك nii-chan`
